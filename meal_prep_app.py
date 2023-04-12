@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-'''
+"""
 Meal plan creation based on user input
 - take user input as daily macros
 - search a database for meals that sum perfectly
@@ -20,7 +20,7 @@ TODO
     - https://towardsdatascience.com/how-to-write-user-friendly-command-line-interfaces-in-python-cc3a6444af8e
 - add caveat to weight gain cals to increase gradually
 - add exceptions to the standard macro formula
-'''
+"""
 
 import sys
 
@@ -37,9 +37,9 @@ def calc_ree_tdee(person):
     activity_level = person.activity_level
     ree = 0
     # ree formulas for each sex
-    if sex == 1: # 1 = male
+    if sex == 1:  # 1 = male
         ree = 10 * weight + 6.25 * height - 5 * age + 5
-    elif sex == 2: # 2 = female
+    elif sex == 2:  # 2 = female
         ree = 10 * weight + 6.25 * height - 5 * age - 161
 
     # tdee formulas for each activity level
@@ -61,13 +61,13 @@ def calc_ree_tdee(person):
 def calc_macros(person):
     calories = person.tdee
     weight_lbs = person.weight * 2.205
-    weight_goal = person.weight_goal # 1=loss, 2=maintain, 3=gain
+    weight_goal = person.weight_goal  # 1=loss, 2=maintain, 3=gain
     if weight_goal == 1:
         # reduce cal by 20%
-        calories = calories - (calories * .20)
+        calories = calories - (calories * 0.20)
     elif weight_goal == 3:
         # increase cal by 20%
-        calories = calories + (calories * .20)
+        calories = calories + (calories * 0.20)
     # else do nothing, calories are already maintenance level
     person.u_calories = round(calories)
     protein = round(weight_lbs * 0.825)
@@ -88,19 +88,20 @@ def build_user(get, user):
         i = 0
         while i == 0:
             try:
-                user.attr = int(input(f'{attr.title()}: '))
+                user.attr = int(input(f"{attr.title()}: "))
                 i = 1
             except ValueError:
-                print('\nERROR: INVALID INPUT')
-                print(instruction)
+                print("\nERROR: INVALID INPUT")
+    # build tdee / ree and macros breakdown for user
 
 
 def main():
+    DIET_CHOICE = {"vegetarian": 1, "pescetarian": 2, "meat-eater": 3}
 
     class Meal:
-        name = ''
-        ingredients = ''
-        method = ''
+        name = ""
+        ingredients = ""
+        method = ""
         protein = 0
         carbohydrates = 0
         fat = 0
@@ -122,36 +123,49 @@ def main():
         u_fat = 0
         u_calories = 0
 
-    # create object from user class
+    # define instance of user() class based on my information
     user_1 = User()
+    setattr(User, "sex", 1)
+    setattr(User, "age", 25)
+    setattr(User, "weight", 75)
+    setattr(User, "height", 183)
+    setattr(User, "activity_level", 3)
+    setattr(User, "weight_goal", 3)
 
     # deal with input and usage
-    usage = ('\nUSAGE: project.py [DIETARY_PREF] [NO.OF_MEALS]\n\n'
-             'DETARY_PREF: vegetarian OR pescetarian OR meat OR lowcarb\n'
-             'NO.OF_MEALS: 1-4\n')
+    usage = (
+        "\nUSAGE: project.py [DIETARY_PREF] [NO.OF_MEALS]\n\n"
+        "DETARY_PREF: vegetarian OR pescetarian OR meat OR lowcarb\n"
+        "NO.OF_MEALS: 1-4\n"
+    )
     meal_range = [1, 2, 3, 4]
     if len(sys.argv) != 3:
         print(usage)
-        print(f'Arg0 = {sys.argv[0]}, argv1 = {sys.argv[1]}')
+        print(f"Arg0 = {sys.argv[0]}, argv1 = {sys.argv[1]}")
     elif sys.argv[1] in DIET_CHOICE:
         user_1.diet_preference = sys.argv[1]
         user_1.meal_num = sys.argv[2]
-    elif sys.argv[2] in meal_range: #fix this later
+    elif sys.argv[2] in meal_range:  # fix this later
         print(sys.argv[2])
     else:
         print(usage)
 
-    print(f'\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n'
-          'Input your information below to calculate your macronutrients:\n')
-    
+    print(
+        f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n"
+        "Input your information below to calculate your macronutrients:\n"
+    )
+
     global instruction
-    instruction = ('''
+    instruction = """
     INPUT INSTRUCTION:
     ----------------------------------------------------
-    All input must be numerical...\n
+    All input must be numerical... please provide the following.\n
     Sex:
        1 = male
        2 = female
+    Age (in years)
+    Weight (in kg's)
+    Height (in cm's)
     Activity_Level:
        1 = Sedentary (light daily activity like walking)
        2 = Light
@@ -161,23 +175,27 @@ def main():
        1 = Weight loss
        2 = Weight maintenance
        3 = Weight gain
-    ''')
+    """
 
-    print(instruction)
+    # print(instruction)
+
+    # NEGATED: only for getting input from user, currently using pre-built profile.
     # give function all relevant class attributes to retrieve input for
-    needed_attr = ['sex', 'age', 'weight', 'height', 'activity_level', 'weight_goal']
-    build_user(needed_attr, user_1)
+    # needed_attr = ["sex", "age", "weight", "height", "activity_level", "weight_goal"]
+    # build_user(needed_attr, user_1)
     calc_ree_tdee(user_1)
     calc_macros(user_1)
 
-    summary = (
-        '\nYOUR DAILY INTAKE SUMMARY\n'
-        '--------------------------\n'
-        f'Total calories: {user_1.u_calories}\n'
-        f'Protein: {user_1.u_protein}\n'
-        f'Carbohydrates: {user_1.u_carbohydrates}\n'
-        f'Fat: {user_1.u_fat}\n')
-    print(summary)
-        
+    macro_summary = (
+        "\nYOUR DAILY INTAKE SUMMARY\n"
+        "--------------------------\n"
+        f"Total calories: {user_1.u_calories}\n"
+        f"Protein: {user_1.u_protein}\n"
+        f"Carbohydrates: {user_1.u_carbohydrates}\n"
+        f"Fat: {user_1.u_fat}\n"
+    )
+    print(macro_summary)
+
+
 if __name__ == "__main__":
     main()
