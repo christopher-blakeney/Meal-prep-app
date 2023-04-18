@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 """ MACRO TETRIS
+functionally similar: https://macromatch.net
+Spoonacular API docs: https://spoonacular.com/food-api/docs
+
 Meal plan creation based on user input
 - take user input as daily macros
 - search a database for meals that sum perfectly
@@ -21,20 +24,83 @@ TODO
     - https://towardsdatascience.com/how-to-write-user-friendly-command-line-interfaces-in-python-cc3a6444af8e
 - add caveat to weight gain cals to increase gradually
 - add exceptions to the standard macro formula
+- add more customisation to recipe search, such as intolerances and cuisine preferences
+- fix kcal / cal conversion
 """
 
 import sys
 import requests
+import json
 
 __author__ = "Christopher J. Blakeney"
 __version__ = "0.1.0"
 __license__ = ""
 
 
-def find_recipe():
-    api_key = '
-    get = requests.get(f"https://api.spoonacular.com/recipes/complexSearch?apiKey={api_key}&includeNutrition=true.")
-    print(get.json())
+def jprint(obj):
+    # create formatted string of python JSON object
+    text = json.dumps(obj, sort_keys=True, indent=4)
+    print(text)
+
+
+def find_recipes(user):
+    # pull values from user
+    carb_per_meal = round(int(user.u_carbohydrates) / int(user.meal_num))
+    prot_per_meal = round(int(user.u_protein) / int(user.meal_num))
+    fat_per_meal = round(int(user.u_fat) / int(user.meal_num))
+    cal_per_meal = round(int(user.u_calories) / int(user.meal_num))
+    u_diet = user.diet_preference
+
+    api_key = "3988bf04a7524e5695cad2fd7ab2bb30"
+    nutr = "addRecipeNutrition=true"
+    diet = f"diet={u_diet}"
+
+    # define acceptable bounds for each macronutrient
+    # carbs
+    max_carb = f"maxCarbs={carb_per_meal + 50}"
+    min_carb = f"minCarbs={round(carb_per_meal / 2)}"
+
+    # protein
+    max_prot = f"maxProtein={prot_per_meal + 50}"
+    min_prot = f"minProtein={round(prot_per_meal / 2)}"
+
+    # fat
+    max_fat = f"maxFat={fat_per_meal + 10}"
+    min_fat = f"minFat={round(fat_per_meal / 2)}"
+
+    # calories
+    max_cal = f"maxCalories={cal_per_meal + 50}"
+    min_cal = f"minCalories={round(cal_per_meal / 2)}"
+
+    # get request from API
+    req = requests.get(
+        f"https://api.spoonacular.com/recipes/complexSearch?apiKey={api_key}"
+        f"&{diet}&{max_carb}&{min_carb}&{max_prot}&{min_prot}&{max_fat}&{min_fat}&{max_cal}&{min_cal}"
+    )
+    json = req.json()
+
+    # print macros needed per meal, probably shouldnt be in this function
+    print(f"Carbs per meal: {carb_per_meal}")
+    print(f"Protein per meal: {prot_per_meal}")
+    print(f"Fat per meal: {fat_per_meal}")
+    print(f"Calories per meal: {cal_per_meal}\n")
+
+    # print raw json object
+    # jprint(json)
+
+    meal_1 = Meal()
+    meal_2 = Meal()
+    meal_3 = Meal()
+    meal_4 = Meal()
+
+    meals = json["results"]
+    for meal in meals:
+        meal_1.name = meal['title']
+        for nutr in meal["nutrition"]["nutrients"]:
+            if nutr == '
+            print(nutr["name"] + ": " + str(round(nutr["amount"])) + nutr["unit"])
+
+    print(recipes)
 
 
 def calc_ree_tdee(person):
@@ -106,6 +172,8 @@ def build_user(get, user):
 def main():
     DIET_CHOICE = {"vegetarian": 1, "pescetarian": 2, "meat-eater": 3}
 
+    global Meal
+
     class Meal:
         name = ""
         ingredients = ""
@@ -158,10 +226,7 @@ def main():
     else:
         print(usage)
 
-    print(
-        f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n"
-        "Input your information below to calculate your macronutrients:\n"
-    )
+    print(f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n")
 
     global instruction
     instruction = """
@@ -195,7 +260,7 @@ def main():
     calc_macros(user_1)
 
     macro_summary = (
-        "\nYOUR DAILY INTAKE SUMMARY\n"
+        "YOUR DAILY INTAKE SUMMARY\n"
         "--------------------------\n"
         f"Total calories: {user_1.u_calories}\n"
         f"Protein: {user_1.u_protein}\n"
@@ -203,7 +268,7 @@ def main():
         f"Fat: {user_1.u_fat}\n"
     )
     print(macro_summary)
-    find_recipe()
+    find_recipes(user_1)
 
 
 if __name__ == "__main__":

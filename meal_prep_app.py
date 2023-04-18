@@ -2,6 +2,8 @@
 
 """ MACRO TETRIS
 functionally similar: https://macromatch.net
+Spoonacular API docs: https://spoonacular.com/food-api/docs
+
 Meal plan creation based on user input
 - take user input as daily macros
 - search a database for meals that sum perfectly
@@ -34,6 +36,7 @@ __author__ = "Christopher J. Blakeney"
 __version__ = "0.1.0"
 __license__ = ""
 
+
 def jprint(obj):
     # create formatted string of python JSON object
     text = json.dumps(obj, sort_keys=True, indent=4)
@@ -47,51 +50,92 @@ def find_recipes(user):
     fat_per_meal = round(int(user.u_fat) / int(user.meal_num))
     cal_per_meal = round(int(user.u_calories) / int(user.meal_num))
     u_diet = user.diet_preference
-    
+
     api_key = "3988bf04a7524e5695cad2fd7ab2bb30"
     nutr = "addRecipeNutrition=true"
     diet = f"diet={u_diet}"
-    
+
     # define acceptable bounds for each macronutrient
     # carbs
     max_carb = f"maxCarbs={carb_per_meal + 50}"
     min_carb = f"minCarbs={round(carb_per_meal / 2)}"
-    
+
     # protein
     max_prot = f"maxProtein={prot_per_meal + 50}"
     min_prot = f"minProtein={round(prot_per_meal / 2)}"
-    
+
     # fat
     max_fat = f"maxFat={fat_per_meal + 10}"
     min_fat = f"minFat={round(fat_per_meal / 2)}"
-    
-    #calories
+
+    # calories
     max_cal = f"maxCalories={cal_per_meal + 50}"
     min_cal = f"minCalories={round(cal_per_meal / 2)}"
-    
+
     # get request from API
-    req = requests.get(f"https://api.spoonacular.com/recipes/complexSearch?apiKey={api_key}&{diet}&{max_carb}&{min_carb}&{max_prot}&{min_prot}&{max_fat}&{min_fat}&{max_cal}&{min_cal}")
+    req = requests.get(
+        f"https://api.spoonacular.com/recipes/complexSearch?apiKey={api_key}"
+        f"&{diet}&{max_carb}&{min_carb}&{max_prot}&{min_prot}&{max_fat}&{min_fat}&{max_cal}&{min_cal}"
+    )
     json = req.json()
+
+    # print macros needed per meal, probably shouldnt be in this function
     print(f"Carbs per meal: {carb_per_meal}")
     print(f"Protein per meal: {prot_per_meal}")
     print(f"Fat per meal: {fat_per_meal}")
     print(f"Calories per meal: {cal_per_meal}\n")
+
+    # print raw json object
+    jprint(json)
+
+    meal_1 = Meal()
+    meal_2 = Meal()
+    meal_3 = Meal()
+    meal_4 = Meal()
     
-    # print differences in macros after eating this meal
-    meals = json['results']
-    for meal in meals:
-        print('\n' + meal['title'])
-        for nutr in meal['nutrition']['nutrients']:
-            print(nutr['name'] + ': ' + str(round(nutr['amount'])) + nutr['unit'])
-            if nutr['name'] == 'Carbohydrates':
-                print(f"Carbs left: {round(user.u_carbohydrates - nutr['amount'])}")
-            elif nutr['name'] == 'Fat':
-                print(f"Fat left: {round(user.u_fat - nutr['amount'])}")
-            elif nutr['name'] == 'Protein':
-                print(f"Protein left: {round(user.u_protein - nutr['amount'])}")
-            elif nutr['name'] == 'Calories':
-                print(f"Calories left: {round(user.u_calories - nutr['amount'])}")
-    #jprint(json)
+    user_meals = [meal_1, meal_2, meal_3, meal_4]
+
+    meals = json["results"]
+    
+    # the loop that gave me hell
+    # imports data (title, p, f, c, c) from api JSON obj into Meal() class
+    for i in range(len(meals)):
+        user_meals[i].name = meals[i]['title']
+        macros = meals[i]['nutrition']['nutrients']
+        for j in range(len(macros)):
+            if macros[j]['name'] == 'Protein':
+                user_meals[i].protein = macros[j]['amount']
+            if macros[j]['name'] == 'Fat':
+                user_meals[i].fat = macros[j]['amount']
+            if macros[j]['name'] == 'Carbohydrates':
+                user_meals[i].carbohydrates = macros[j]['amount']
+            if macros[j]['name'] == 'Calories':
+                user_meals[i].calories = macros[j]['amount']
+                
+    print(f'\nMeal 1: {meal_1.name}' 
+    f'\nProtein: {meal_1.protein}'
+    f'\nFat: {meal_1.fat}'
+    f'\nCarbs: {meal_1.carbohydrates}'
+    f'\nCalories: {meal_1.calories}\n'
+    
+    f'\nMeal 2: {meal_2.name}' 
+    f'\nProtein: {meal_2.protein}'
+    f'\nFat: {meal_2.fat}'
+    f'\nCarbs: {meal_2.carbohydrates}'
+    f'\nCalories: {meal_2.calories}\n'
+    
+    f'\nMeal 3: {meal_3.name}' 
+    f'\nProtein: {meal_3.protein}'
+    f'\nFat: {meal_3.fat}'
+    f'\nCarbs: {meal_3.carbohydrates}'
+    f'\nCalories: {meal_3.calories}\n'
+    
+    f'\nMeal 4: {meal_4.name}' 
+    f'\nProtein: {meal_4.protein}'
+    f'\nFat: {meal_4.fat}'
+    f'\nCarbs: {meal_4.carbohydrates}'
+    f'\nCalories: {meal_4.calories}\n'
+    )
 
 
 def calc_ree_tdee(person):
@@ -163,10 +207,12 @@ def build_user(get, user):
 def main():
     DIET_CHOICE = {"vegetarian": 1, "pescetarian": 2, "meat-eater": 3}
 
+    global Meal
+
     class Meal:
-        name = ""
-        ingredients = ""
-        method = ""
+        name = 'null'
+        ingredients = 'null'
+        method = 'null'
         protein = 0
         carbohydrates = 0
         fat = 0
@@ -215,9 +261,7 @@ def main():
     else:
         print(usage)
 
-    print(
-        f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n"
-    )
+    print(f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n")
 
     global instruction
     instruction = """
