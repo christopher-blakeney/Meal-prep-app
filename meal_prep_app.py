@@ -31,6 +31,7 @@ TODO
 import sys
 import requests
 import json
+import random
 
 __author__ = "Christopher J. Blakeney"
 __version__ = "0.1.0"
@@ -49,7 +50,7 @@ def find_recipes(user):
     prot_per_meal = round(int(user.u_protein) / int(user.meal_num))
     fat_per_meal = round(int(user.u_fat) / int(user.meal_num))
     cal_per_meal = round(int(user.u_calories) / int(user.meal_num))
-    u_diet = user.diet_preference
+    u_diet = ""  # change to user.diet_preference later
 
     api_key = "3988bf04a7524e5695cad2fd7ab2bb30"
     nutr = "addRecipeNutrition=true"
@@ -86,55 +87,100 @@ def find_recipes(user):
     print(f"Calories per meal: {cal_per_meal}\n")
 
     # print raw json object
-    jprint(json)
+    # jprint(json)
 
     meal_1 = Meal()
     meal_2 = Meal()
     meal_3 = Meal()
     meal_4 = Meal()
-    
+
     user_meals = [meal_1, meal_2, meal_3, meal_4]
 
     meals = json["results"]
-    
+
+    # starting points for macro tetris
+    starting_point = random.choice(meals)
+    r_meal_1 = random.choice(meals)
+    r_meal_2 = random.choice(meals)
+    r_meal_3 = random.choice(meals)
+    macros = starting_point["nutrition"]["nutrients"]
+
+    # set user meal 4 to random starting point
+    meal_4.name = starting_point["title"]
+    for j in range(len(macros)):
+        if macros[j]["name"] == "Calories":
+            meal_4.calories = macros[j]["amount"]
+        elif macros[j]["name"] == "Fat":
+            meal_4.fat = macros[j]["amount"]
+        elif macros[j]["name"] == "Carbohydrates":
+            meal_4.carbohydrates = macros[j]["amount"]
+        elif macros[j]["name"] == "Protein":
+            meal_4.protein = macros[j]["amount"]
+
+    # user's baseline macro data
+    starting_macros = {
+        "Protein": user.u_protein,
+        "Fat": user.u_fat,
+        "Carbohydrates": user.u_carbohydrates,
+        "Calories": user.u_calories,
+    }
+
+    # checks that each macro user is above 10g
+    for k, v in starting_macros.items():
+        if v > 10:
+            # subtract random choice meal from starting macros, setting starting macros to the difference
+            for j in range(len(macros)):
+                if k == macros[j]["name"]:
+                    starting_macros[k] = v - macros[j]["amount"]
+
+    print("Starting Macros after subtractions: ", starting_macros)
+    print(f"Starting meal: {starting_point['title']}")
+
+    # create list of recipe names being used
+    recipes_in_use = []
+    for i in range(len(user_meals)):
+        if user_meals[i].name != "null":
+            recipes_in_use.append(user_meals[i].name)
+
     # the loop that gave me hell
     # imports data (title, p, f, c, c) from api JSON obj into Meal() class
-    for i in range(len(meals)):
-        user_meals[i].name = meals[i]['title']
-        macros = meals[i]['nutrition']['nutrients']
-        for j in range(len(macros)):
-            if macros[j]['name'] == 'Protein':
-                user_meals[i].protein = macros[j]['amount']
-            if macros[j]['name'] == 'Fat':
-                user_meals[i].fat = macros[j]['amount']
-            if macros[j]['name'] == 'Carbohydrates':
-                user_meals[i].carbohydrates = macros[j]['amount']
-            if macros[j]['name'] == 'Calories':
-                user_meals[i].calories = macros[j]['amount']
-                
-    print(f'\nMeal 1: {meal_1.name}' 
-    f'\nProtein: {meal_1.protein}'
-    f'\nFat: {meal_1.fat}'
-    f'\nCarbs: {meal_1.carbohydrates}'
-    f'\nCalories: {meal_1.calories}\n'
-    
-    f'\nMeal 2: {meal_2.name}' 
-    f'\nProtein: {meal_2.protein}'
-    f'\nFat: {meal_2.fat}'
-    f'\nCarbs: {meal_2.carbohydrates}'
-    f'\nCalories: {meal_2.calories}\n'
-    
-    f'\nMeal 3: {meal_3.name}' 
-    f'\nProtein: {meal_3.protein}'
-    f'\nFat: {meal_3.fat}'
-    f'\nCarbs: {meal_3.carbohydrates}'
-    f'\nCalories: {meal_3.calories}\n'
-    
-    f'\nMeal 4: {meal_4.name}' 
-    f'\nProtein: {meal_4.protein}'
-    f'\nFat: {meal_4.fat}'
-    f'\nCarbs: {meal_4.carbohydrates}'
-    f'\nCalories: {meal_4.calories}\n'
+    for i in range(len(user_meals) - 1):
+        if meals[i]["title"] not in recipes_in_use:
+            user_meals[i].name = meals[i]["title"]
+            recipes_in_use.append(user_meals[i].name)
+            macros = meals[i]["nutrition"]["nutrients"]
+            for j in range(len(macros)):
+                if macros[j]["name"] == "Protein":
+                    user_meals[i].protein = macros[j]["amount"]
+                elif macros[j]["name"] == "Fat":
+                    user_meals[i].fat = macros[j]["amount"]
+                elif macros[j]["name"] == "Carbohydrates":
+                    user_meals[i].carbohydrates = macros[j]["amount"]
+                elif macros[j]["name"] == "Calories":
+                    user_meals[i].calories = macros[j]["amount"]
+
+    print(recipes_in_use)
+    print(
+        f"\nMeal 1: {meal_1.name}"
+        f"\nProtein: {meal_1.protein}"
+        f"\nFat: {meal_1.fat}"
+        f"\nCarbs: {meal_1.carbohydrates}"
+        f"\nCalories: {meal_1.calories}\n"
+        f"\nMeal 2: {meal_2.name}"
+        f"\nProtein: {meal_2.protein}"
+        f"\nFat: {meal_2.fat}"
+        f"\nCarbs: {meal_2.carbohydrates}"
+        f"\nCalories: {meal_2.calories}\n"
+        f"\nMeal 3: {meal_3.name}"
+        f"\nProtein: {meal_3.protein}"
+        f"\nFat: {meal_3.fat}"
+        f"\nCarbs: {meal_3.carbohydrates}"
+        f"\nCalories: {meal_3.calories}\n"
+        f"\nMeal 4: {meal_4.name}"
+        f"\nProtein: {meal_4.protein}"
+        f"\nFat: {meal_4.fat}"
+        f"\nCarbs: {meal_4.carbohydrates}"
+        f"\nCalories: {meal_4.calories}\n"
     )
 
 
@@ -210,9 +256,9 @@ def main():
     global Meal
 
     class Meal:
-        name = 'null'
-        ingredients = 'null'
-        method = 'null'
+        name = "null"
+        ingredients = "null"
+        method = "null"
         protein = 0
         carbohydrates = 0
         fat = 0
