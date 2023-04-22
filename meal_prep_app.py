@@ -26,6 +26,8 @@ TODO
 - add exceptions to the standard macro formula
 - add more customisation to recipe search, such as intolerances and cuisine preferences
 - fix kcal / cal conversion
+- make each meal choice random
+- subtract all meal macros from personal intake
 """
 
 import sys
@@ -105,7 +107,9 @@ def find_recipes(user):
     r_meal_3 = random.choice(meals)
     macros = starting_point["nutrition"]["nutrients"]
 
-    # set user meal 4 to random starting point
+    random_meals = [r_meal_1, r_meal_2, r_meal_3]
+
+    # set user meal 4 to random starting point for tetris
     meal_4.name = starting_point["title"]
     for j in range(len(macros)):
         if macros[j]["name"] == "Calories":
@@ -118,23 +122,12 @@ def find_recipes(user):
             meal_4.protein = macros[j]["amount"]
 
     # user's baseline macro data
-    starting_macros = {
+    user_macros = {
         "Protein": user.u_protein,
         "Fat": user.u_fat,
         "Carbohydrates": user.u_carbohydrates,
         "Calories": user.u_calories,
     }
-
-    # checks that each macro user is above 10g
-    for k, v in starting_macros.items():
-        if v > 10:
-            # subtract random choice meal from starting macros, setting starting macros to the difference
-            for j in range(len(macros)):
-                if k == macros[j]["name"]:
-                    starting_macros[k] = v - macros[j]["amount"]
-
-    print("Starting Macros after subtractions: ", starting_macros)
-    print(f"Starting meal: {starting_point['title']}")
 
     # create list of recipe names being used
     recipes_in_use = []
@@ -143,21 +136,57 @@ def find_recipes(user):
             recipes_in_use.append(user_meals[i].name)
 
     # the loop that gave me hell
-    # imports data (title, p, f, c, c) from api JSON obj into Meal() class
-    for i in range(len(user_meals) - 1):
-        if meals[i]["title"] not in recipes_in_use:
-            user_meals[i].name = meals[i]["title"]
-            recipes_in_use.append(user_meals[i].name)
-            macros = meals[i]["nutrition"]["nutrients"]
-            for j in range(len(macros)):
-                if macros[j]["name"] == "Protein":
-                    user_meals[i].protein = macros[j]["amount"]
-                elif macros[j]["name"] == "Fat":
-                    user_meals[i].fat = macros[j]["amount"]
-                elif macros[j]["name"] == "Carbohydrates":
-                    user_meals[i].carbohydrates = macros[j]["amount"]
-                elif macros[j]["name"] == "Calories":
-                    user_meals[i].calories = macros[j]["amount"]
+    # imports data (title, p, f, c, c) from random api JSON obj into instances of Meal() class
+    """
+    for k in user_meals:
+        while k.name == "null":
+            for i in range(len(user_meals) - 1):
+                if meals[i]["title"] not in recipes_in_use:
+                    user_meals[i].name = meals[i]["title"]
+                    recipes_in_use.append(user_meals[i].name)
+                    macros = meals[i]["nutrition"]["nutrients"]
+                    for j in range(len(macros)):
+                        if macros[j]["name"] == "Protein":
+                            user_meals[i].protein = macros[j]["amount"]
+                        elif macros[j]["name"] == "Fat":
+                            user_meals[i].fat = macros[j]["amount"]
+                        elif macros[j]["name"] == "Carbohydrates":
+                            user_meals[i].carbohydrates = macros[j]["amount"]
+                        elif macros[j]["name"] == "Calories":
+                            user_meals[i].calories = macros[j]["amount"]"""
+
+    for k in user_meals:
+        while k.name == "null":
+            for i in range(len(user_meals) - 1):
+                if random_meals[i]["title"] not in recipes_in_use:
+                    user_meals[i].name = random_meals[i]["title"]
+                    recipes_in_use.append(user_meals[i].name)
+                    macros = random_meals[i]["nutrition"]["nutrients"]
+                    for j in range(len(macros)):
+                        if macros[j]["name"] == "Protein":
+                            user_meals[i].protein = macros[j]["amount"]
+                        elif macros[j]["name"] == "Fat":
+                            user_meals[i].fat = macros[j]["amount"]
+                        elif macros[j]["name"] == "Carbohydrates":
+                            user_meals[i].carbohydrates = macros[j]["amount"]
+                        elif macros[j]["name"] == "Calories":
+                            user_meals[i].calories = macros[j]["amount"]
+
+    # checks that each macro user is above 10g
+    for k, v in user_macros.items():
+        # subtract random choice meals from starting macros, setting starting macros to the difference
+        for j in range(len(user_meals)):
+            if k == "Protein":
+                user_macros[k] = user_macros[k] - user_meals[j].protein
+            elif k == "Fat":
+                user_macros[k] = user_macros[k] - user_meals[j].fat
+            elif k == "Carbohydrates":
+                user_macros[k] = user_macros[k] - user_meals[j].carbohydrates
+            elif k == "Calories":
+                user_macros[k] = user_macros[k] - user_meals[j].calories
+
+    print("Starting Macros after subtractions: ", user_macros)
+    print(f"\nStarting meal: {starting_point['title']}")
 
     print(recipes_in_use)
     print(

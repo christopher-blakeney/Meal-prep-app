@@ -1,0 +1,1012 @@
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 96.8024, 'Fat': 70.9653, 'Carbohydrates': 662.352, 'Calories': 2494.774}
+Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 360, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 356, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 151, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 103.6177, 'Fat': 67.8608, 'Carbohydrates': 668.5245, 'Calories': 2525.23
+80000000003}
+Starting meal: Macaroni with Fresh Tomatoes and Beans
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 171, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 105.196, 'Fat': 67.8417, 'Carbohydrates': 657.039, 'Calories': 2486.599}
+Starting meal: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+['Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Brown Rice For Dessert', 'Fettuccine with shrimp, mussels 
+and cherry tomatoes', 'Chicken Teriyaki with Soba Noodles']
+
+Meal 1: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+Meal 2: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 3: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 4: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 105.8327, 'Fat': 59.8884, 'Carbohydrates': 665.4110000000001, 'Calories'
+: 2453.2309999999998}
+Starting meal: Pierogi Casserole
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 172, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 96.8024, 'Fat': 70.9653, 'Carbohydrates': 662.352, 'Calories': 2494.774}
+Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 172, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 95.22409999999999, 'Fat': 62.210499999999996, 'Carbohydrates': 669.0025,
+ 'Calories': 2462.2200000000003}
+Starting meal: Parmesan Polenta
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 171, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209
+}
+Starting meal: Peppery Absorption-Cooked Red-Wine Capellini
+^G^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 171, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 117.7975, 'Fat': 75.6467, 'Carbohydrates': 666.312, 'Calories': 2663.192
+}
+Starting meal: Brown Rice For Dessert
+['Brown Rice For Dessert', 'Chicken Teriyaki with Soba Noodles', 'Pierogi Casserole', 'Macaroni with Fresh Tomatoes and B
+eans']
+
+Meal 1: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 2: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 3: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+Meal 4: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209
+}
+Starting meal: Peppery Absorption-Cooked Red-Wine Capellini
+['Peppery Absorption-Cooked Red-Wine Capellini', 'Pierogi Casserole', 'Parmesan Polenta', 'Brown Rice For Dessert']
+
+Meal 1: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 2: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+Meal 3: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+Meal 4: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 179
+    for j in range(len(user_meals):
+                                  ^
+SyntaxError: invalid syntax
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Macaroni with Fresh Tomatoes and Beans
+['Macaroni with Fresh Tomatoes and Beans', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Chicken Teriyaki with 
+Soba Noodles', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers']
+
+Meal 1: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 2: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 3: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 4: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Macaroni with Fresh Tomatoes and Beans
+['Macaroni with Fresh Tomatoes and Beans', 'Leek and Chicken Soup', 'Fettuccine with shrimp, mussels and cherry tomatoes'
+, 'Brown Rice For Dessert']
+
+Meal 1: Leek and Chicken Soup
+Protein: 28.9045
+Fat: 21.643
+Carbs: 100.731
+Calories: 732.658
+
+Meal 2: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 3: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+Meal 4: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Pepper
+y Absorption-Cooked Red-Wine Capellini', 'Fettuccine with shrimp, mussels and cherry tomatoes']
+
+Meal 1: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 2: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 3: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 4: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+Protein: 39.1976
+Fat: 21.0347
+Carbs: 105.648
+Calories: 804.226
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Brown Rice For Dessert
+['Brown Rice For Dessert', 'Pierogi Casserole', 'Leek and Chicken Soup', 'Parmesan Polenta']
+
+Meal 1: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 2: Leek and Chicken Soup
+Protein: 28.9045
+Fat: 21.643
+Carbs: 100.731
+Calories: 732.658
+
+Meal 3: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+Meal 4: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 381, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 377, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Parmesan Polenta
+['Parmesan Polenta', 'Chicken Teriyaki with Soba Noodles', 'Peppery Absorption-Cooked Red-Wine Capellini', 'Pierogi Casse
+role']
+
+Meal 1: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 2: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 3: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 4: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 379, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 375, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 36, 'Fat': -8, 'Carbohydrates': 668, 'Calories': 3199}
+
+Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Parmesan Polenta', 'Fettuccine with shrimp, mussels and cherry toma
+toes', 'Macaroni with Fresh Tomatoes and Beans']
+
+Meal 1: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+Meal 2: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 3: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+Meal 4: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+Protein: 39.1976
+Fat: 21.0347
+Carbs: 105.648
+Calories: 804.226
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Traceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 181, in find_recipes
+    user_macros[k] = v - user_meals[j].macro
+AttributeError: 'Meal' object has no attribute 'macro'
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 379, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 375, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Traceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 379, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 375, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 180, in find_recipes
+    user_macros[k] = v - user_meals[j].k
+AttributeError: 'Meal' object has no attribute 'k'
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 159, in find_recipes
+    while k.name == "null":
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 376, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Macaroni with Fresh Tomatoes and Beans
+['Macaroni with Fresh Tomatoes and Beans', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Fettuccine with 
+shrimp, mussels and cherry tomatoes', 'Peppery Absorption-Cooked Red-Wine Capellini']
+
+Meal 1: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 2: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 3: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 4: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+%                                                                                                                      (base) christopher@Christophers-MacBook-Pro meal_prep_app % 
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % 
