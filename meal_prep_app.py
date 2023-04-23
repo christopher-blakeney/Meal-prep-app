@@ -137,23 +137,6 @@ def find_recipes(user):
 
     # the loop that gave me hell
     # imports data (title, p, f, c, c) from random api JSON obj into instances of Meal() class
-    """
-    for k in user_meals:
-        while k.name == "null":
-            for i in range(len(user_meals) - 1):
-                if meals[i]["title"] not in recipes_in_use:
-                    user_meals[i].name = meals[i]["title"]
-                    recipes_in_use.append(user_meals[i].name)
-                    macros = meals[i]["nutrition"]["nutrients"]
-                    for j in range(len(macros)):
-                        if macros[j]["name"] == "Protein":
-                            user_meals[i].protein = macros[j]["amount"]
-                        elif macros[j]["name"] == "Fat":
-                            user_meals[i].fat = macros[j]["amount"]
-                        elif macros[j]["name"] == "Carbohydrates":
-                            user_meals[i].carbohydrates = macros[j]["amount"]
-                        elif macros[j]["name"] == "Calories":
-                            user_meals[i].calories = macros[j]["amount"]"""
 
     for k in user_meals:
         while k.name == "null":
@@ -172,7 +155,6 @@ def find_recipes(user):
                         elif macros[j]["name"] == "Calories":
                             user_meals[i].calories = macros[j]["amount"]
 
-    # checks that each macro user is above 10g
     for k, v in user_macros.items():
         # subtract random choice meals from starting macros, setting starting macros to the difference
         for j in range(len(user_meals)):
@@ -186,9 +168,9 @@ def find_recipes(user):
                 user_macros[k] = user_macros[k] - user_meals[j].calories
 
     print("Starting Macros after subtractions: ", user_macros)
-    print(f"\nStarting meal: {starting_point['title']}")
+    print(f"\nStarting meal: {starting_point['title']}\n")
 
-    print(recipes_in_use)
+    print("Recipes in use: {recipes_in_use}\n")
     print(
         f"\nMeal 1: {meal_1.name}"
         f"\nProtein: {meal_1.protein}"
@@ -257,7 +239,7 @@ def calc_macros(person):
     protein = round(weight_lbs * 0.825)
     fat = calories * 0.25
     fat = round(fat / 9)
-    carbs = calories - protein - fat
+    carbs = calories - (protein * 4 + fat * 9)
     carbs = round(carbs / 4)
 
     # set the user atributes based off calculations
@@ -280,8 +262,6 @@ def build_user(get, user):
 
 
 def main():
-    DIET_CHOICE = {"vegetarian": 1, "pescetarian": 2, "meat-eater": 3}
-
     global Meal
 
     class Meal:
@@ -311,54 +291,17 @@ def main():
 
     # define instance of user() class based on my information
     user_1 = User()
-    setattr(User, "sex", 1)
-    setattr(User, "age", 25)
-    setattr(User, "weight", 75)
-    setattr(User, "height", 183)
-    setattr(User, "activity_level", 3)
-    setattr(User, "weight_goal", 3)
+    setattr(user_1, "sex", 1)
+    setattr(user_1, "age", 25)
+    setattr(user_1, "weight", 78)
+    setattr(user_1, "height", 183)
+    setattr(user_1, "activity_level", 3)
+    setattr(user_1, "weight_goal", 3)
+    setattr(user_1, "diet_preference", "vegetarian")
+    setattr(user_1, "meal_num", 4)
 
     # deal with input and usage
-    usage = (
-        "\nUSAGE: project.py [DIETARY_PREF] [NO.OF_MEALS]\n\n"
-        "DETARY_PREF: vegetarian OR pescetarian OR meat OR lowcarb\n"
-        "NO.OF_MEALS: 1-4\n"
-    )
-    meal_range = [1, 2, 3, 4]
-    if len(sys.argv) != 3:
-        print(usage)
-        print(f"Arg0 = {sys.argv[0]}, argv1 = {sys.argv[1]}")
-    elif sys.argv[1] in DIET_CHOICE:
-        user_1.diet_preference = sys.argv[1]
-        user_1.meal_num = sys.argv[2]
-    elif sys.argv[2] in meal_range:  # fix this later
-        print(sys.argv[2])
-    else:
-        print(usage)
-
-    print(f"\nYou chose {user_1.meal_num} {user_1.diet_preference} meals...\n")
-
-    global instruction
-    instruction = """
-    INPUT INSTRUCTION:
-    ----------------------------------------------------
-    All input must be numerical... please provide the following.\n
-    Sex:
-       1 = male
-       2 = female
-    Age (in years)
-    Weight (in kg's)
-    Height (in cm's)
-    Activity_Level:
-       1 = Sedentary (light daily activity like walking)
-       2 = Light
-       3 = Moderate
-       4 = Very Active
-    Weight_Goal:
-       1 = Weight loss
-       2 = Weight maintenance
-       3 = Weight gain
-    """
+    usage = "\nUSAGE: macro_tetris.py [PATH_TO_USER.txt]\n\n"
 
     # print(instruction)
 
@@ -370,7 +313,8 @@ def main():
     calc_macros(user_1)
 
     macro_summary = (
-        "YOUR DAILY INTAKE SUMMARY\n"
+        "\n--------------------------------------------------------------------------------------------------------\n"
+        "\nYOUR DAILY INTAKE SUMMARY\n"
         "--------------------------\n"
         f"Total calories: {user_1.u_calories}\n"
         f"Protein: {user_1.u_protein}\n"

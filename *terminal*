@@ -41,8 +41,7 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 103.6177, 'Fat': 67.8608, 'Carbohydrates': 668.5245, 'Calories': 2525.23
-80000000003}
+Starting Macros after subtractions:  {'Protein': 103.6177, 'Fat': 67.8608, 'Carbohydrates': 668.5245, 'Calories': 2525.2380000000003}
 Starting meal: Macaroni with Fresh Tomatoes and Beans
 ^CTraceback (most recent call last):
   File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
@@ -71,8 +70,7 @@ Calories per meal: 825
 
 Starting Macros after subtractions:  {'Protein': 105.196, 'Fat': 67.8417, 'Carbohydrates': 657.039, 'Calories': 2486.599}
 Starting meal: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
-['Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Brown Rice For Dessert', 'Fettuccine with shrimp, mussels 
-and cherry tomatoes', 'Chicken Teriyaki with Soba Noodles']
+['Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Brown Rice For Dessert', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Chicken Teriyaki with Soba Noodles']
 
 Meal 1: Brown Rice For Dessert
 Protein: 18.2025
@@ -114,8 +112,7 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 105.8327, 'Fat': 59.8884, 'Carbohydrates': 665.4110000000001, 'Calories'
-: 2453.2309999999998}
+Starting Macros after subtractions:  {'Protein': 105.8327, 'Fat': 59.8884, 'Carbohydrates': 665.4110000000001, 'Calories': 2453.2309999999998}
 Starting meal: Pierogi Casserole
 ^CTraceback (most recent call last):
   File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
@@ -169,8 +166,7 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 95.22409999999999, 'Fat': 62.210499999999996, 'Carbohydrates': 669.0025,
- 'Calories': 2462.2200000000003}
+Starting Macros after subtractions:  {'Protein': 95.22409999999999, 'Fat': 62.210499999999996, 'Carbohydrates': 669.0025, 'Calories': 2462.2200000000003}
 Starting meal: Parmesan Polenta
 ^CTraceback (most recent call last):
   File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
@@ -197,8 +193,7 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209
-}
+Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209}
 Starting meal: Peppery Absorption-Cooked Red-Wine Capellini
 ^G^CTraceback (most recent call last):
   File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 380, in <module>
@@ -225,11 +220,9 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 117.7975, 'Fat': 75.6467, 'Carbohydrates': 666.312, 'Calories': 2663.192
-}
+Starting Macros after subtractions:  {'Protein': 117.7975, 'Fat': 75.6467, 'Carbohydrates': 666.312, 'Calories': 2663.192}
 Starting meal: Brown Rice For Dessert
-['Brown Rice For Dessert', 'Chicken Teriyaki with Soba Noodles', 'Pierogi Casserole', 'Macaroni with Fresh Tomatoes and B
-eans']
+['Brown Rice For Dessert', 'Chicken Teriyaki with Soba Noodles', 'Pierogi Casserole', 'Macaroni with Fresh Tomatoes and Beans']
 
 Meal 1: Chicken Teriyaki with Soba Noodles
 Protein: 46.3744
@@ -271,8 +264,7 @@ Protein per meal: 34
 Fat per meal: 23
 Calories per meal: 825
 
-Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209
-}
+Starting Macros after subtractions:  {'Protein': 114.6575, 'Fat': 78.5955, 'Carbohydrates': 670.725, 'Calories': 2618.209}
 Starting meal: Peppery Absorption-Cooked Red-Wine Capellini
 ['Peppery Absorption-Cooked Red-Wine Capellini', 'Pierogi Casserole', 'Parmesan Polenta', 'Brown Rice For Dessert']
 
@@ -374,8 +366,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
 
 Starting meal: Macaroni with Fresh Tomatoes and Beans
-['Macaroni with Fresh Tomatoes and Beans', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Chicken Teriyaki with 
-Soba Noodles', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers']
+['Macaroni with Fresh Tomatoes and Beans', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Chicken Teriyaki with Soba Noodles', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers']
 
 Meal 1: Fettuccine with shrimp, mussels and cherry tomatoes
 Protein: 51.2076
@@ -420,8 +411,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
 
 Starting meal: Macaroni with Fresh Tomatoes and Beans
-['Macaroni with Fresh Tomatoes and Beans', 'Leek and Chicken Soup', 'Fettuccine with shrimp, mussels and cherry tomatoes'
-, 'Brown Rice For Dessert']
+['Macaroni with Fresh Tomatoes and Beans', 'Leek and Chicken Soup', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Brown Rice For Dessert']
 
 Meal 1: Leek and Chicken Soup
 Protein: 28.9045
@@ -466,8 +456,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
 
 Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
-['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Pepper
-y Absorption-Cooked Red-Wine Capellini', 'Fettuccine with shrimp, mussels and cherry tomatoes']
+['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Peppery Absorption-Cooked Red-Wine Capellini', 'Fettuccine with shrimp, mussels and cherry tomatoes']
 
 Meal 1: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
 Protein: 30.804
@@ -632,8 +621,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
 
 Starting meal: Parmesan Polenta
-['Parmesan Polenta', 'Chicken Teriyaki with Soba Noodles', 'Peppery Absorption-Cooked Red-Wine Capellini', 'Pierogi Casse
-role']
+['Parmesan Polenta', 'Chicken Teriyaki with Soba Noodles', 'Peppery Absorption-Cooked Red-Wine Capellini', 'Pierogi Casserole']
 
 Meal 1: Chicken Teriyaki with Soba Noodles
 Protein: 46.3744
@@ -703,8 +691,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 36, 'Fat': -8, 'Carbohydrates': 668, 'Calories': 3199}
 
 Starting meal: Spaghetti with Peas, Mushrooms, and Tomato Sauce
-['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Parmesan Polenta', 'Fettuccine with shrimp, mussels and cherry toma
-toes', 'Macaroni with Fresh Tomatoes and Beans']
+['Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Parmesan Polenta', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Macaroni with Fresh Tomatoes and Beans']
 
 Meal 1: Parmesan Polenta
 Protein: 40.7759
@@ -972,8 +959,7 @@ Calories per meal: 825
 Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
 
 Starting meal: Macaroni with Fresh Tomatoes and Beans
-['Macaroni with Fresh Tomatoes and Beans', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Fettuccine with 
-shrimp, mussels and cherry tomatoes', 'Peppery Absorption-Cooked Red-Wine Capellini']
+['Macaroni with Fresh Tomatoes and Beans', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'Fettuccine with shrimp, mussels and cherry tomatoes', 'Peppery Absorption-Cooked Red-Wine Capellini']
 
 Meal 1: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
 Protein: 30.804
@@ -1009,4 +995,834 @@ Total calories: 3299
 Protein: 136
 Carbohydrates: 768
 Fat: 92
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+136
+136
+136
+136
+92
+92
+92
+92
+768
+768
+768
+768
+3299
+3299
+3299
+3299
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Pierogi Casserole
+['Pierogi Casserole', 'Peppery Absorption-Cooked Red-Wine Capellini', 'Fettuccine with shrimp, mussels and cherry tomat
+oes', 'Parmesan Polenta']
+
+Meal 1: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 2: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+Meal 3: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+Meal 4: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Traceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 180, in find_recipes
+    print(user_macros[v])
+KeyError: 136
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 382, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 378, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Protein
+Protein
+Protein
+Protein
+Fat
+Fat
+Fat
+Fat
+Carbohydrates
+Carbohydrates
+Carbohydrates
+Carbohydrates
+Calories
+Calories
+Calories
+Calories
+Starting Macros after subtractions:  {'Protein': 136, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Chicken Teriyaki with Soba Noodles
+['Chicken Teriyaki with Soba Noodles', 'Spaghetti with Peas, Mushrooms, and Tomato Sauce', 'Brown Rice For Dessert', 'P
+ierogi Casserole']
+
+Meal 1: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+Protein: 39.1976
+Fat: 21.0347
+Carbs: 105.648
+Calories: 804.226
+
+Meal 2: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+Meal 3: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 4: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 181
+    user_macros[k] = user_macros[k] - user_meals[j].protein
+    ^
+IndentationError: expected an indented block
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': -6.551700000000004, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299}
+
+Starting meal: Fettuccine with shrimp, mussels and cherry tomatoes
+['Fettuccine with shrimp, mussels and cherry tomatoes', 'Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers', 'P
+eppery Absorption-Cooked Red-Wine Capellini', 'Spaghetti with Peas, Mushrooms, and Tomato Sauce']
+
+Meal 1: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 2: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 3: Spaghetti with Peas, Mushrooms, and Tomato Sauce
+Protein: 39.1976
+Fat: 21.0347
+Carbs: 105.648
+Calories: 804.226
+
+Meal 4: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 379, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 375, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': -13.728500000000011, 'Fat': 92, 'Carbohydrates': 768, 'Calories': 3299
+}
+
+Starting meal: Fettuccine with shrimp, mussels and cherry tomatoes
+['Fettuccine with shrimp, mussels and cherry tomatoes', 'Chicken Teriyaki with Soba Noodles', 'Lemon Fresh Spaghetti wi
+th Garden Sauce & Pumpkin Flowers', 'Peppery Absorption-Cooked Red-Wine Capellini']
+
+Meal 1: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 2: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 3: Peppery Absorption-Cooked Red-Wine Capellini
+Protein: 21.3425
+Fat: 13.4045
+Carbs: 97.275
+Calories: 680.791
+
+Meal 4: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': 8.873499999999996, 'Fat': 3.5980999999999916, 'Carbohydrates': 367.343
+, 'Calories': 347.99400000000037}
+
+Starting meal: Brown Rice For Dessert
+['Brown Rice For Dessert', 'Macaroni with Fresh Tomatoes and Beans', 'Chicken Teriyaki with Soba Noodles', 'Pierogi Cas
+serole']
+
+Meal 1: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+Meal 2: Chicken Teriyaki with Soba Noodles
+Protein: 46.3744
+Fat: 15.7978
+Carbs: 96.9045
+Calories: 695.667
+
+Meal 3: Pierogi Casserole
+Protein: 30.1673
+Fat: 32.1116
+Carbs: 102.589
+Calories: 845.769
+
+Meal 4: Brown Rice For Dessert
+Protein: 18.2025
+Fat: 16.3533
+Carbs: 101.688
+Calories: 635.808
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 385, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 381, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 385, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 381, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 160, in find_recipes
+    for i in range(len(user_meals) - 1):
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+^CTraceback (most recent call last):
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 385, in <module>
+    main()
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 381, in main
+    find_recipes(user_1)
+  File "/Users/christopher/Desktop/programs/meal_prep_app/meal_prep_app.py", line 161, in find_recipes
+    if random_meals[i]["title"] not in recipes_in_use:
+KeyboardInterrupt
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % python3 meal_prep_app.py vegetarian 4
+
+You chose 4 vegetarian meals...
+
+YOUR DAILY INTAKE SUMMARY
+--------------------------
+Total calories: 3299
+Protein: 136
+Carbohydrates: 768
+Fat: 92
+
+Carbs per meal: 192
+Protein per meal: 34
+Fat per meal: 23
+Calories per meal: 825
+
+Starting Macros after subtractions:  {'Protein': -19.16980000000001, 'Fat': -3.7896, 'Carbohydrates': 358.9546, 'Calori
+es': 61.32700000000045}
+
+Starting meal: Fettuccine with shrimp, mussels and cherry tomatoes
+['Fettuccine with shrimp, mussels and cherry tomatoes', 'Parmesan Polenta', 'Lemon Fresh Spaghetti with Garden Sauce & 
+Pumpkin Flowers', 'Macaroni with Fresh Tomatoes and Beans']
+
+Meal 1: Parmesan Polenta
+Protein: 40.7759
+Fat: 29.7895
+Carbs: 98.9975
+Calories: 836.78
+
+Meal 2: Lemon Fresh Spaghetti with Garden Sauce & Pumpkin Flowers
+Protein: 30.804
+Fat: 24.1583
+Carbs: 110.961
+Calories: 812.401
+
+Meal 3: Macaroni with Fresh Tomatoes and Beans
+Protein: 32.3823
+Fat: 24.1392
+Carbs: 99.4755
+Calories: 773.762
+
+Meal 4: Fettuccine with shrimp, mussels and cherry tomatoes
+Protein: 51.2076
+Fat: 17.7026
+Carbs: 99.6114
+Calories: 814.73
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   meal_prep_app.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        #*terminal*#
+        *terminal*
+        .#*terminal*
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git diff
+diff --git a/meal_prep_app.py b/meal_prep_app.py
+index b92383f..a95b7bf 100644
+--- a/meal_prep_app.py
++++ b/meal_prep_app.py
+@@ -26,6 +26,8 @@ TODO
+ - add exceptions to the standard macro formula
+ - add more customisation to recipe search, such as intolerances and cuisine preferences
+ - fix kcal / cal conversion
++- make each meal choice random
++- subtract all meal macros from personal intake
+ """
+ 
+ import sys
+@@ -105,7 +107,9 @@ def find_recipes(user):
+     r_meal_3 = random.choice(meals)
+     macros = starting_point["nutrition"]["nutrients"]
+ 
+-    # set user meal 4 to random starting point
++    random_meals = [r_meal_1, r_meal_2, r_meal_3]
++
++    # set user meal 4 to random starting point for tetris
+     meal_4.name = starting_point["title"]
+     for j in range(len(macros)):
+         if macros[j]["name"] == "Calories":
+@@ -118,24 +122,13 @@ def find_recipes(user):
+             meal_4.protein = macros[j]["amount"]
+ 
+     # user's baseline macro data
+-    starting_macros = {
++    user_macros = {
+         "Protein": user.u_protein,
+         "Fat": user.u_fat,
+         "Carbohydrates": user.u_carbohydrates,
+         "Calories": user.u_calories,
+     }
+ 
+-    # checks that each macro user is above 10g
+-    for k, v in starting_macros.items():
+-        if v > 10:
+-            # subtract random choice meal from starting macros, setting starting macros to the difference
+-            for j in range(len(macros)):
+-                if k == macros[j]["name"]:
+-                    starting_macros[k] = v - macros[j]["amount"]
+-
+-    print("Starting Macros after subtractions: ", starting_macros)
+-    print(f"Starting meal: {starting_point['title']}")
+-
+     # create list of recipe names being used
+     recipes_in_use = []
+     for i in range(len(user_meals)):
+@@ -143,21 +136,57 @@ def find_recipes(user):
+             recipes_in_use.append(user_meals[i].name)
+ 
+     # the loop that gave me hell
+-    # imports data (title, p, f, c, c) from api JSON obj into Meal() class
+-    for i in range(len(user_meals) - 1):
+-        if meals[i]["title"] not in recipes_in_use:
+-            user_meals[i].name = meals[i]["title"]
+-            recipes_in_use.append(user_meals[i].name)
+-            macros = meals[i]["nutrition"]["nutrients"]
+-            for j in range(len(macros)):
+-                if macros[j]["name"] == "Protein":
+-                    user_meals[i].protein = macros[j]["amount"]
+-                elif macros[j]["name"] == "Fat":
+-                    user_meals[i].fat = macros[j]["amount"]
+-                elif macros[j]["name"] == "Carbohydrates":
+-                    user_meals[i].carbohydrates = macros[j]["amount"]
+-                elif macros[j]["name"] == "Calories":
+-                    user_meals[i].calories = macros[j]["amount"]
++    # imports data (title, p, f, c, c) from random api JSON obj into instances of Meal() class
++    """
++    for k in user_meals:
++        while k.name == "null":
++            for i in range(len(user_meals) - 1):
++                if meals[i]["title"] not in recipes_in_use:
++                    user_meals[i].name = meals[i]["title"]
++                    recipes_in_use.append(user_meals[i].name)
++                    macros = meals[i]["nutrition"]["nutrients"]
++                    for j in range(len(macros)):
++                        if macros[j]["name"] == "Protein":
++                            user_meals[i].protein = macros[j]["amount"]
++                        elif macros[j]["name"] == "Fat":
++                            user_meals[i].fat = macros[j]["amount"]
++                        elif macros[j]["name"] == "Carbohydrates":
++                            user_meals[i].carbohydrates = macros[j]["amount"]
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git add -A
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   #*terminal*#
+        new file:   *terminal*
+        new file:   .#*terminal*
+        modified:   meal_prep_app.py
+
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git restore -A
+error: unknown switch `A'
+usage: git restore [<options>] [--source=<branch>] <file>...
+
+  1 Merge branch 'master' of https://github.com/christopher-blakeney/Meal-prep-app
+  2 # Please enter a commit message to explain why this merge is necessary,
+  3 # especially if it merges an updated upstream into a topic branch.
+  4 #
+  5 # Lines starting with '#' will be ignored, and an empty message aborts
+  6 # the commit.
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+~                                                                                                                      
+ ~/Desktop/programs/meal_prep_app/.git/MERGE_MSG  GITCOMMIT             ascii: 35 hex: 0x23 row: 6 col: 1 percent: 100%
+Merge made by the 'ort' strategy.
+ .ipynb_checkpoints/Untitled-checkpoint.ipynb | 121 ------------------------------------------------------------------
+ 1 file changed, 121 deletions(-)
+ delete mode 100644 .ipynb_checkpoints/Untitled-checkpoint.ipynb
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   #*terminal*#
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git add -A
+(base) christopher@Christophers-MacBook-Pro meal_prep_app % git push  
+Enumerating objects: 12, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 3.83 KiB | 1.91 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/christopher-blakeney/Meal-prep-app.git
+   7c54902..58a05b3  master -> master
 (base) christopher@Christophers-MacBook-Pro meal_prep_app % 
